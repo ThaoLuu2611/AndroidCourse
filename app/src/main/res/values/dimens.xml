@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="name_size">20sp</dimen>
+    <dimen name="bio_size">15sp</dimen>
+</resources>
