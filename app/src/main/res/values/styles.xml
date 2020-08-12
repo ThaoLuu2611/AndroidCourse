@@ -22,4 +22,13 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
+    <style name="boxStyle">
+        <item name="android:background">@android:color/holo_green_light</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/box_size_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white </item>
+
+    </style>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.example.androidcourse
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,12 +13,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun clickHandler(view: View){
-        var editText = findViewById<EditText>(R.id.nick_edit)
-        var nameText = findViewById<TextView>(R.id.nick_text)
-        nameText.visibility = View.VISIBLE
-        nameText.text = editText.text
-        editText.visibility = View.GONE
-        view.visibility = View.GONE
+    fun onClick(view: View){
+        when(view.id) {
+            R.id.bio_button -> {
+                var intent = Intent(this, BioActivity::class.java)
+                startActivity(intent)
+            }
+
+            R.id.color_button -> {
+                var intent = Intent(this, ColorActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
+
     }
 }
